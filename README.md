@@ -1,35 +1,26 @@
-Hello!
+Face Recognition System
+This project implements a face recognition system using OpenCV and LBPH (Local Binary Patterns Histograms). The system is capable of detecting faces, generating datasets, training a classifier, and recognizing faces in real-time.
 
-Overview:
-This project demonstrates a face detection system using Python and OpenCV. The program can detect faces and facial features such as eyes, nose, and mouth in real-time through webcam input.
+This project is designed to create a real-time face recognition system using Python and OpenCV. It involves three main steps:
+
+ 1.Generating a dataset of faces.
+ 2.Training a face recognizer using the dataset.
+ 3.Recognizing faces in real-time using the trained recognizer.
+
+ Requirements
+  Python 3.x
+  OpenCV
+  NumPy
+  PIL (Python Imaging Library)
+
+Generating Dataset
+Run the generate_dataset.py script to capture and save images.
+
+Training the Classifier
+Run the train_classifier.py script to train the face recognizer
+
+Recognizing Faces
+Run the recognize_faces.py script to start real-time face recognition
 
 
-Features:
-Real-time face detection using webcam
-Detection of facial features: eyes, nose, and mouth
-Visual indication of detected features with bounding boxes and labels
-
-
-Functions Defined:
-
-draw_boundary Function
-This function detects features in an image and draws a bounding box around them.
-
-Parameters:
-img: The input image
-classifier: The Haar Cascade classifier for detection
-scaleFactor: The scale factor for detection
-minNeighbor: The minimum number of neighbors for detection
-color: The color of the bounding box
-text: The label text for the bounding box
-
-detect Function
-This function handles the overall detection process for faces and facial features.
-
-Parameters:
-img: The input image
-faceCascade: The Haar Cascade classifier for face detection
-eyesCascade: The Haar Cascade classifier for eyes detection
-noseCascade: The Haar Cascade classifier for nose detection
-mouthCascade: The Haar Cascade classifier for mouth detection
-
+The system can detect and recognize faces in real-time. It labels recognized faces with the corresponding names "Soham" and "Maithili" based on the trained dataset.
